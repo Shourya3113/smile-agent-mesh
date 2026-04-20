@@ -1,0 +1,19 @@
+{
+  "name": "Industry Analyst Agent",
+  "version": "1.0.0",
+  "description": "Specialist agent for digital twin case studies and industry insights. Serves HTTP API for A2A consumption.",
+  "capabilities": [
+    "case_study_analysis",
+    "industry_insights",
+    "knowledge_base_search"
+  ],
+  "tools_used": ["get_case_studies", "get_insights", "query_knowledge"],
+  "endpoint": "http://localhost:8001",
+  "protocol": "A2A/1.0",
+  "security": {
+    "input_sanitization": true,
+    "max_input_length": 500,
+    "prompt_injection_detection": true,
+    "rate_limiting": false
+  }
+}

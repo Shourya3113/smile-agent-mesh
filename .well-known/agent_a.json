@@ -1,0 +1,20 @@
+{
+  "name": "SMILE Strategist Agent",
+  "version": "1.0.0",
+  "description": "Orchestrator agent specializing in SMILE methodology. Discovers and queries Industry Analyst Agent via A2A, synthesizes combined output through local LLM.",
+  "capabilities": [
+    "smile_methodology_guidance",
+    "phase_detail_analysis",
+    "multi_agent_orchestration",
+    "llm_synthesis"
+  ],
+  "tools_used": ["smile_overview", "smile_phase_detail"],
+  "consumes": ["http://localhost:8001/.well-known/agent.json"],
+  "endpoint": "http://localhost:8000",
+  "protocol": "A2A/1.0",
+  "security": {
+    "input_sanitization": true,
+    "max_input_length": 500,
+    "prompt_injection_detection": true
+  }
+}
